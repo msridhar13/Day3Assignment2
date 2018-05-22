@@ -1,0 +1,30 @@
+#to display ['A','C','A','D','G','L','I','D']
+stringAcad="ACADGILD"
+sList=[x for x in stringAcad]
+print(sList)
+
+
+
+
+#to display ['x', 'xx', 'xxx', 'xxxx', 'y', 'yy', 'yyy', 'yyyy', 'z', 'zz', 'zzz', 'zzzz']
+sResults=[i*j for i in['x','y','z'] for j in range(1,5)]
+print(sResults)
+
+
+#to display ['x', 'y', 'z', 'xx', 'yy', 'zz', 'xxx', 'yyy', 'zzz', 'xxxx', 'yyyy', 'zzzz']
+tResults=[i*j for i in range(1,5) for j in ['x','y','z']]
+print(sResults)
+
+#to display [[2], [3], [4], [3], [4], [5], [4], [5], [6]]
+fResults=[[j] for i in range(2,5) for j in range(i,i+3)]
+print(fResults)
+
+
+#to display [[2, 3, 4, 5], [3, 4, 5, 6], [4, 5, 6, 7], [5, 6, 7, 8]]
+fiResults=[[i,j,k,l] for i in range(2,6) for j in [i+1]for k in [j+1]for l in [k+1]]
+print(fiResults)
+
+
+#to display [(1, 1), (1, 2), (1, 3), (2, 1), (2, 2), (2, 3), (3, 1), (3, 2), (3, 3)]
+sResults=[(j,i) for i in range(1,4) for j in range(1,4) ]
+print(sResults)
